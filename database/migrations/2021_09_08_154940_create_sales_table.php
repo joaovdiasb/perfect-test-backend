@@ -17,12 +17,13 @@ class CreateSalesTable extends Migration
             $table->id();
 
             $table->unsignedBigInteger('quantity');
-            $table->double('discount');
+            $table->unsignedDecimal('discount');
 
             $table->foreignId('product_id')->constrained('products');
             $table->foreignId('sale_situation_id')->constrained('sale_situations');
+            $table->foreignId('client_id')->constrained('clients');
 
-            $table->timestamp('dh_sale')->nullable();
+            $table->timestamp('dh_sold')->nullable();
             $table->timestamps();
         });
     }
