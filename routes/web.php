@@ -1,16 +1,12 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+Route::match([Request::METHOD_GET, Request::METHOD_POST], '/', 'DashboardController')->name('dashboard');
 
-
-/*
-Telas para ver o funcionamento sem dados
-*/
-Route::get('/', 'DashboardController@index');
-// Route::get('/sales', function () {
-//     return view('crud_sales');
-// });
-// Route::get('/products', function () {
-//     return view('crud_products');
-// });
+Route::resources([
+    'sale'    => 'SaleController',
+    'client'  => 'ClientController',
+    'product' => 'ProductController'
+], ['except' => ['index', 'show']]);

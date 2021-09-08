@@ -17,7 +17,8 @@ class CreateSalesTable extends Migration
             $table->id();
 
             $table->unsignedBigInteger('quantity');
-            $table->unsignedDecimal('discount');
+            $table->unsignedDecimal('discount')->nullable();
+            $table->unsignedDecimal('total');
 
             $table->foreignId('product_id')->constrained('products');
             $table->foreignId('sale_situation_id')->constrained('sale_situations');
