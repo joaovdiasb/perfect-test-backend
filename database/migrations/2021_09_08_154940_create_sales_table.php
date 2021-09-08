@@ -18,10 +18,11 @@ class CreateSalesTable extends Migration
 
             $table->unsignedBigInteger('quantity');
             $table->double('discount');
-            $table->timestamp('dh_sale')->nullable();
 
             $table->foreignId('product_id')->constrained('products');
             $table->foreignId('sale_situation_id')->constrained('sale_situations');
+
+            $table->timestamp('dh_sale')->nullable();
             $table->timestamps();
         });
     }

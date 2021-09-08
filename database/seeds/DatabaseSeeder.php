@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\{Client, Product, Sale};
 use Illuminate\Database\Seeder;
 use Database\Seeders\{SaleSituationSeeder};
 
@@ -13,5 +14,9 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call(SaleSituationSeeder::class);
+
+        factory(Client::class, 20)->create();
+        factory(Product::class, 20)->create();
+        factory(Sale::class, 20)->create();
     }
 }
