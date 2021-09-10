@@ -42,11 +42,25 @@
       'Image' => 'Intervention\\Image\\Facades\\Image',
     ),
   ),
+  'joaovdiasb/laravel-brazillian' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Joaovdiasb\\LaravelBrazillian\\LaravelBrazillianServiceProvider',
+    ),
+  ),
   'laravel/tinker' => 
   array (
     'providers' => 
     array (
       0 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    ),
+  ),
+  'lucascudo/laravel-pt-br-localization' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Lucascudo\\LaravelPtBRLocalization\\LaravelPtBRLocalizationServiceProvider',
     ),
   ),
   'nesbot/carbon' => 

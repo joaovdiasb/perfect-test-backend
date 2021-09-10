@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7421d6d24c4b92d36ddf3af39398f113",
+    "content-hash": "6585ff41a50652d280782eb32ddaa46b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1723,6 +1723,65 @@
                 }
             ],
             "time": "2021-07-22T14:31:53+00:00"
+        },
+        {
+            "name": "joaovdiasb/laravel-brazillian",
+            "version": "0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/joaovdiasb/laravel-brazillian.git",
+                "reference": "b2355ae32cf85d47338eb557ce079147dcfee616"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/joaovdiasb/laravel-brazillian/zipball/b2355ae32cf85d47338eb557ce079147dcfee616",
+                "reference": "b2355ae32cf85d47338eb557ce079147dcfee616",
+                "shasum": ""
+            },
+            "require-dev": {
+                "illuminate/http": "^7.0",
+                "illuminate/support": "^7.0",
+                "nunomaduro/collision": "^4.0",
+                "orchestra/testbench": "^5.0",
+                "phpunit/phpunit": "9.4",
+                "symfony/thanks": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Joaovdiasb\\LaravelBrazillian\\LaravelBrazillianServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Joaovdiasb\\LaravelBrazillian\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "João Victor Dias Bittencourt",
+                    "email": "j.v_dias@hotmail.com"
+                }
+            ],
+            "keywords": [
+                "Brazillian",
+                "cep",
+                "cnpj",
+                "cpf",
+                "laravel",
+                "pt-BR"
+            ],
+            "support": {
+                "issues": "https://github.com/joaovdiasb/laravel-brazillian/issues",
+                "source": "https://github.com/joaovdiasb/laravel-brazillian/tree/0.0.3"
+            },
+            "time": "2021-06-16T00:22:35+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -6352,6 +6411,50 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "lucascudo/laravel-pt-br-localization",
+            "version": "v1.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lucascudo/laravel-pt-BR-localization.git",
+                "reference": "162e26243da8592a26337c3c55e13ead80358753"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lucascudo/laravel-pt-BR-localization/zipball/162e26243da8592a26337c3c55e13ead80358753",
+                "reference": "162e26243da8592a26337c3c55e13ead80358753",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Lucascudo\\LaravelPtBRLocalization\\LaravelPtBRLocalizationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Lucascudo\\LaravelPtBRLocalization\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Cascudo",
+                    "email": "lucas.sisau@gmail.com"
+                }
+            ],
+            "description": "Arquivos de linguagem em Português do Brasil (pt-BR) para Laravel >= 5.6",
+            "support": {
+                "issues": "https://github.com/lucascudo/laravel-pt-BR-localization/issues",
+                "source": "https://github.com/lucascudo/laravel-pt-BR-localization/tree/v1.1.10"
+            },
+            "time": "2021-09-07T08:37:58+00:00"
         },
         {
             "name": "mockery/mockery",

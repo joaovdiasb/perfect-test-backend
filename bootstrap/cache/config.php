@@ -615,6 +615,56 @@
     ),
     'compiled' => '/Users/joao/Documents/GitHub/perfect-test-backend/storage/framework/views',
   ),
+  'ide-helper' => 
+  array (
+    'filename' => '_ide_helper',
+    'format' => 'php',
+    'meta_filename' => '.phpstorm.meta.php',
+    'include_fluent' => false,
+    'include_factory_builders' => false,
+    'write_model_magic_where' => true,
+    'write_eloquent_model_mixins' => false,
+    'include_helpers' => false,
+    'helper_files' => 
+    array (
+      0 => '/Users/joao/Documents/GitHub/perfect-test-backend/vendor/laravel/framework/src/Illuminate/Support/helpers.php',
+    ),
+    'model_locations' => 
+    array (
+      0 => 'app',
+    ),
+    'ignored_models' => 
+    array (
+    ),
+    'extra' => 
+    array (
+      'Eloquent' => 
+      array (
+        0 => 'Illuminate\\Database\\Eloquent\\Builder',
+        1 => 'Illuminate\\Database\\Query\\Builder',
+      ),
+      'Session' => 
+      array (
+        0 => 'Illuminate\\Session\\Store',
+      ),
+    ),
+    'magic' => 
+    array (
+    ),
+    'interfaces' => 
+    array (
+    ),
+    'custom_db_types' => 
+    array (
+    ),
+    'model_camel_case_properties' => false,
+    'type_overrides' => 
+    array (
+      'integer' => 'int',
+      'boolean' => 'bool',
+    ),
+    'include_class_docblocks' => false,
+  ),
   'flare' => 
   array (
     'key' => NULL,
@@ -627,8 +677,18 @@
       'report_query_bindings' => true,
       'report_view_data' => true,
       'grouping_type' => NULL,
+      'report_logs' => true,
+      'maximum_number_of_collected_logs' => 200,
+      'censor_request_body_fields' => 
+      array (
+        0 => 'password',
+      ),
     ),
     'send_logs_as_events' => true,
+    'censor_request_body_fields' => 
+    array (
+      0 => 'password',
+    ),
   ),
   'ignition' => 
   array (
@@ -645,10 +705,21 @@
     'local_sites_path' => '',
     'housekeeping_endpoint_prefix' => '_ignition',
   ),
+  'image' => 
+  array (
+    'driver' => 'gd',
+  ),
   'trustedproxy' => 
   array (
     'proxies' => NULL,
-    'headers' => 30,
+    'headers' => 94,
+  ),
+  'laravel-brazillian' => 
+  array (
+    'ignore_validation_on_env' => 
+    array (
+      0 => 'local',
+    ),
   ),
   'tinker' => 
   array (

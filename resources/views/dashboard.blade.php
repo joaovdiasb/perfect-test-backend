@@ -2,10 +2,10 @@
 
 @section('content')
   <h1>Dashboard de vendas</h1>
-  <div class='card mt-3'>
-    <div class='card-body'>
+  <div class="card mt-3">
+    <div class="card-body">
       <h5 class="card-title mb-5">Tabela de vendas
-        <a href='' class='btn btn-secondary float-right btn-sm rounded-pill'><i class='fa fa-plus'></i> Nova venda</a>
+        <a href="{{ route('sale.create') }}" class="btn btn-secondary float-right btn-sm rounded-pill"><i class="fa fa-plus"></i> Nova venda</a>
       </h5>
 
       <form action="{{ route('dashboard') }}" method="post">
@@ -51,6 +51,9 @@
       <table class='table'>
         <tr>
           <th scope="col">
+            Cliente
+          </th>
+          <th scope="col">
             Produto
           </th>
           <th scope="col">
@@ -72,6 +75,9 @@
         @forelse ($sales as $sale)
           <tr>
             <td>
+              {{ $sale->client->name }}
+            </td>
+            <td>
               {{ $sale->product->name }}
             </td>
             <td>
@@ -87,7 +93,7 @@
               R$ {{ $sale->total }}
             </td>
             <td>
-              <a href='' class='btn btn-primary'>Editar</a>
+              <a href="{{ route('sale.edit', $sale) }}" class='btn btn-primary'>Editar</a>
             </td>
           </tr>
         @empty

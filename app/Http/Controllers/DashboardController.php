@@ -32,12 +32,15 @@ class DashboardController extends Controller
         $validated = $request->validated();
 
         $sales = Sale::query()
-            ->select('dh_sold', 'product_id', 'discount', 'total')
+            ->select('dh_sold', 'product_id', 'client_id', 'discount', 'total', 'id')
             ->when($validated->sale_date_range, fn ($q) =>
                 $q->whereBetween('dh_sold', [$validated->initial_date, $validated->final_date])
             )->when($validated->client, fn ($q) => 
                 $q->where('client_id', $validated->client))
-            ->with(['product:id,name,price'])
+            ->with([
+                'product:id,name,price',
+                'client:id,name'
+            ])
             ->paginate(10);
 
         $saleResults = SaleSituation::query()
@@ -51,7 +54,7 @@ class DashboardController extends Controller
             'currentClient'        => $validated->client,
             'currentSaleDateRange' => $validated->sale_date_range,
             'sales'                => $sales,
-            'clients'              => Client::all(),
+            'clients'              => Client::all(['name', 'cpf', 'id']),
             'products'             => Product::paginate(10)
         ];
     }
