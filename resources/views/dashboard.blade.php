@@ -92,7 +92,7 @@
           </tr>
         @empty
           <tr>
-            <td>
+            <td colspan="6">
               Nenhum venda encontrada.
             </td>
           </tr>
@@ -129,7 +129,11 @@
             </td>
           </tr>
         @empty
-
+          <tr>
+            <td colspan="3">
+              Nenhum resultado encontrado.
+            </td>
+          </tr>
         @endforelse
       </table>
     </div>
@@ -138,12 +142,13 @@
   <div class='card mt-3'>
     <div class='card-body'>
       <h5 class="card-title mb-5">Produtos
-        <a href='' class='btn btn-secondary float-right btn-sm rounded-pill'><i class='fa fa-plus'></i> Novo produto</a>
+        <a href="{{ route('product.create') }}" class='btn btn-secondary float-right btn-sm rounded-pill'><i
+            class='fa fa-plus'></i> Novo produto</a>
       </h5>
       <table class='table'>
         <tr>
           <th scope="col">
-            Cover
+            Miniatura
           </th>
           <th scope="col">
             Nome
@@ -158,7 +163,9 @@
         @forelse ($products as $product)
           <tr>
             <td>
-
+              @if ($product->photo_data_url)
+                <img class="img-fluid img-thumbnail" width="70px" src="{{ $product->photo_data_url }}" />
+              @endif
             </td>
             <td>
               {{ $product->name }}
@@ -167,12 +174,12 @@
               {{ $product->price }}
             </td>
             <td>
-              <a href='' class='btn btn-primary'>Editar</a>
+              <a href="{{ route('product.edit', $product) }}" class='btn btn-primary'>Editar</a>
             </td>
           </tr>
         @empty
           <tr>
-            <td>
+            <td colspan="4">
               Nenhum produto encontrado.
             </td>
           </tr>

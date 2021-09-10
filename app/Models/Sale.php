@@ -11,9 +11,10 @@ class Sale extends BaseModel
         'discount_total_value' => 'decimal:2'
     ];
 
-    protected $appends = [
-        'discount_total_value'
-    ];
+    public function getDhSoldAttribute(string $value): string
+    {
+      return date('d/m/Y', strtotime($value));
+    }
 
     public function product(): BelongsTo
     {
@@ -28,10 +29,5 @@ class Sale extends BaseModel
     public function client(): BelongsTo
     {
         return $this->belongsTo(Client::class);
-    }
-
-    public function getDhSoldAttribute(string $value): string
-    {
-      return date('d/m/Y', strtotime($value));
     }
 }

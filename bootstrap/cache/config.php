@@ -177,7 +177,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'C:\\laragon\\www\\perfect-test-backend\\storage\\framework/cache/data',
+        'path' => '/Users/joao/Documents/GitHub/perfect-test-backend/storage/framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -265,8 +265,8 @@
         'host' => '127.0.0.1',
         'port' => '3306',
         'database' => 'desafio',
-        'username' => 'root2',
-        'password' => 'Jv211087',
+        'username' => 'root',
+        'password' => '211087',
         'unix_socket' => '',
         'charset' => 'utf8mb4',
         'collation' => 'utf8mb4_unicode_ci',
@@ -285,8 +285,8 @@
         'host' => '127.0.0.1',
         'port' => '3306',
         'database' => 'desafio',
-        'username' => 'root2',
-        'password' => 'Jv211087',
+        'username' => 'root',
+        'password' => '211087',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -300,8 +300,8 @@
         'host' => '127.0.0.1',
         'port' => '3306',
         'database' => 'desafio',
-        'username' => 'root2',
-        'password' => 'Jv211087',
+        'username' => 'root',
+        'password' => '211087',
         'charset' => 'utf8',
         'prefix' => '',
         'prefix_indexes' => true,
@@ -343,12 +343,12 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\laragon\\www\\perfect-test-backend\\storage\\app',
+        'root' => '/Users/joao/Documents/GitHub/perfect-test-backend/storage/app',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'C:\\laragon\\www\\perfect-test-backend\\storage\\app/public',
+        'root' => '/Users/joao/Documents/GitHub/perfect-test-backend/storage/app/public',
         'url' => 'http://test-backend.devppay.com.br/storage',
         'visibility' => 'public',
       ),
@@ -365,7 +365,7 @@
     ),
     'links' => 
     array (
-      'C:\\laragon\\www\\perfect-test-backend\\public\\storage' => 'C:\\laragon\\www\\perfect-test-backend\\storage\\app/public',
+      '/Users/joao/Documents/GitHub/perfect-test-backend/public/storage' => '/Users/joao/Documents/GitHub/perfect-test-backend/storage/app/public',
     ),
   ),
   'hashing' => 
@@ -399,13 +399,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'C:\\laragon\\www\\perfect-test-backend\\storage\\logs/laravel.log',
+        'path' => '/Users/joao/Documents/GitHub/perfect-test-backend/storage/logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'C:\\laragon\\www\\perfect-test-backend\\storage\\logs/laravel.log',
+        'path' => '/Users/joao/Documents/GitHub/perfect-test-backend/storage/logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -455,7 +455,7 @@
       ),
       'emergency' => 
       array (
-        'path' => 'C:\\laragon\\www\\perfect-test-backend\\storage\\logs/laravel.log',
+        'path' => '/Users/joao/Documents/GitHub/perfect-test-backend/storage/logs/laravel.log',
       ),
     ),
   ),
@@ -512,7 +512,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'C:\\laragon\\www\\perfect-test-backend\\resources\\views/vendor/mail',
+        0 => '/Users/joao/Documents/GitHub/perfect-test-backend/resources/views/vendor/mail',
       ),
     ),
   ),
@@ -591,7 +591,7 @@
     'lifetime' => '120',
     'expire_on_close' => false,
     'encrypt' => false,
-    'files' => 'C:\\laragon\\www\\perfect-test-backend\\storage\\framework/sessions',
+    'files' => '/Users/joao/Documents/GitHub/perfect-test-backend/storage/framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -611,59 +611,9 @@
   array (
     'paths' => 
     array (
-      0 => 'C:\\laragon\\www\\perfect-test-backend\\resources\\views',
+      0 => '/Users/joao/Documents/GitHub/perfect-test-backend/resources/views',
     ),
-    'compiled' => 'C:\\laragon\\www\\perfect-test-backend\\storage\\framework\\views',
-  ),
-  'ide-helper' => 
-  array (
-    'filename' => '_ide_helper',
-    'format' => 'php',
-    'meta_filename' => '.phpstorm.meta.php',
-    'include_fluent' => false,
-    'include_factory_builders' => false,
-    'write_model_magic_where' => true,
-    'write_eloquent_model_mixins' => false,
-    'include_helpers' => false,
-    'helper_files' => 
-    array (
-      0 => 'C:\\laragon\\www\\perfect-test-backend/vendor/laravel/framework/src/Illuminate/Support/helpers.php',
-    ),
-    'model_locations' => 
-    array (
-      0 => 'app',
-    ),
-    'ignored_models' => 
-    array (
-    ),
-    'extra' => 
-    array (
-      'Eloquent' => 
-      array (
-        0 => 'Illuminate\\Database\\Eloquent\\Builder',
-        1 => 'Illuminate\\Database\\Query\\Builder',
-      ),
-      'Session' => 
-      array (
-        0 => 'Illuminate\\Session\\Store',
-      ),
-    ),
-    'magic' => 
-    array (
-    ),
-    'interfaces' => 
-    array (
-    ),
-    'custom_db_types' => 
-    array (
-    ),
-    'model_camel_case_properties' => false,
-    'type_overrides' => 
-    array (
-      'integer' => 'int',
-      'boolean' => 'bool',
-    ),
-    'include_class_docblocks' => false,
+    'compiled' => '/Users/joao/Documents/GitHub/perfect-test-backend/storage/framework/views',
   ),
   'flare' => 
   array (
@@ -677,18 +627,8 @@
       'report_query_bindings' => true,
       'report_view_data' => true,
       'grouping_type' => NULL,
-      'report_logs' => true,
-      'maximum_number_of_collected_logs' => 200,
-      'censor_request_body_fields' => 
-      array (
-        0 => 'password',
-      ),
     ),
     'send_logs_as_events' => true,
-    'censor_request_body_fields' => 
-    array (
-      0 => 'password',
-    ),
   ),
   'ignition' => 
   array (
@@ -708,7 +648,7 @@
   'trustedproxy' => 
   array (
     'proxies' => NULL,
-    'headers' => 94,
+    'headers' => 30,
   ),
   'tinker' => 
   array (
