@@ -1,3 +1,21 @@
+ ## Instalação
+1. Clone o repositório:
+```bash
+git clone https://github.com/lsnepomuceno/perfect-test-backend.git
+```
+
+2. Instale as bibliotecas:
+```bash
+cd perfect-test-backend && composer install
+```
+
+3. Altere no .env as configurações de database;
+
+4. Execute as migrations, seeders e factories:
+```bash
+php artisan migrate:fresh --seed
+```
+ 
  # Você quer ser um desenvolvedor Backend na Perfectpay? 
  O desafio é desenvolver um sistema de vendas onde consiste um cadastro de produtos, o próprio cadastro de vendas onde será preenchido alguns dados também referente a cliente, uma dashboard onde estará
 centralizado os dados de produtos, consulta de vendas e um relatório simplificado de vendas.
