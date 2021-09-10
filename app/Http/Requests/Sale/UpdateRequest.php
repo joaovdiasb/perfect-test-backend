@@ -33,15 +33,8 @@ class UpdateRequest extends FormRequest
      */
     public function rules(): array
     {
-        if ($this->has('client_id')) {
-            $rules['client_id'] = 'required|integer|exists:clients,id';
-        } else {
-            $rules['name']  = 'required|string|between:1,256';
-            $rules['email'] = 'required|email|between:1,256';
-            $rules['cpf']   = 'required|cpf|formato_cpf';
-        }
-
-        return $rules + [
+        return [
+            'client_id'         => 'required|integer|exists:clients,id',
             'product_id'        => 'required|integer|exists:products,id',
             'dh_sold'           => 'required|date|date_format:Y-m-d',
             'quantity'          => 'required|integer|between:1,999999999',
